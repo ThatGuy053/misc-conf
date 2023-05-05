@@ -1,0 +1,2 @@
+﻿$asrarray = "d3e037e1-3eb8-44c8-a917-57927947596d","56a863a9-875e-4185-98a7-b882c64b5ce5","b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4","9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2","d4f940ab-401b-4efc-aadc-ad5f3c50688a","75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84","92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b","e6db77e5-3df2-4cf1-b95a-636979351e5b"
+foreach ($asr in $asrarray) {Add-MpPreference -AttackSurfaceReductionRules_Actions Enabled -AttackSurfaceReductionRules_Ids $asr}
